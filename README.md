@@ -1,16 +1,65 @@
-# React + Vite
+# 🚀 Modern Kanban Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Preview]
 
-Currently, two official plugins are available:
+An interactive task management application built with **React** and **Tailwind CSS**, featuring a modern **Kanban** style interface. This project showcases a sleek **Glassmorphism** design, smooth **drag-and-drop** functionality, and dynamic state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Designed to demonstrate proficiency in complex state manipulation, responsive UI design, and intuitive user interactions without the need for a backend (utilizing LocalStorage for persistence).
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **🖱️ Smooth Drag & Drop:** Move tasks between columns or reorder them within the same column with fluid animations (powered by `@hello-pangea/dnd`).
+* **🎨 Modern UI (Glassmorphism):** sleek Dark Mode interface featuring aesthetic transparency and blur effects.
+* **💾 Auto-Save (LocalStorage):** Tasks and columns are automatically saved to the browser's local storage, ensuring data persistence on refresh.
+* **🛠️ Task Management (CRUD):**
+    * Create new tasks with Priority levels (High, Medium, Low).
+    * Edit task content and priority.
+    * Delete tasks with a stylish **Custom Confirmation Modal**.
+* **📊 Dynamic Column Management:**
+    * Add new columns dynamically.
+    * Customize column names and indicator colors.
+    * Responsive horizontal scrolling with a **Custom Scrollbar**.
+* **⚠️ Custom Alerts:** Replaces default browser alerts with elegant, custom-built confirmation modals.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is built using a modern, industry-standard tech stack:
+
+* **Framework:** [React 19](https://react.dev/)
+* **Build Tool:** [Vite](https://vitejs.dev/) (Blazing fast)
+* **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+* **Drag & Drop:** [`@hello-pangea/dnd`](https://github.com/hello-pangea/dnd)
+* **Icons:** [Lucide React](https://lucide.dev/)
+* **Utility:** [UUID](https://github.com/uuidjs/uuid) (For unique ID generation)
+
+## 🚀 Getting Started (Installation)
+
+Follow these steps to run the project locally on your machine:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  Open your browser and navigate to the address shown (usually `http://localhost:5173`).
+
+## 📂 Project Structure
+
+```text
+src/
+├── assets/          # Static assets (images/svgs)
+├── components/      # (Optional: for separated components)
+├── index.css        # Tailwind configuration & Global fonts
+├── main.jsx         # React entry point
+└── App.jsx          # Main Logic (State, DragHandlers, Rendering)
