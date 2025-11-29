@@ -5,6 +5,8 @@ An interactive task management application built with **React** and **Tailwind C
 Designed to demonstrate proficiency in complex state manipulation, responsive UI design, and intuitive user interactions without the need for a backend (utilizing LocalStorage for persistence).
 
 ## 📸 Preview
+![preview](https://github.com/user-attachments/assets/a0f23411-67a7-4cf3-b0e9-38c67d2bf736)
+
 ### 🏠 Main View
 <img width="1919" height="939" alt="Screenshot 2025-11-29 054518" src="https://github.com/user-attachments/assets/a657fe90-b374-404e-90e7-5038577906a0" />
 
